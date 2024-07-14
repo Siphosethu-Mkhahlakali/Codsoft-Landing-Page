@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Landing_Page.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Content/bootstrap-grid.css" rel="stylesheet" />
+    <link href="CSS/StyleSheet1.css" rel="stylesheet" />
+    <link href="nav.css" rel="stylesheet" />
+    <style type="text/css">
+        .auto-style1 {
+            width: 141px;
+            height: 55px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+                <div class="navbar">
+                    <ul>
+                        <li class="nav image"> <img src="Images/We%20Fix%20Logo.png" class="auto-style1" /></li>
+                        <li><a href="Webform1.aspx">Home</a></li>
+                        <li><a href="about.asp">About Us</a></li>
+                        <li><a href="log In.asp">Log In</a></li>
+                        <li><a href="sign up.asp">Sign Up</a></li>
+                        <li><a href="contact.asp">Contact Us</a></li>
+                    </ul>
+                </div>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server"></asp:ContentPlaceHolder>
+        <footer>
+            <div class="container-fluid text-center bg-primary-subtle fixed-bottom">
+                <div class="row mt-3">
+                    <div class="col-lg-12">
+                        <p class="copyright">Copyright &copy; 2024 We Fix - Design: Siphosethu Mkhohlakali</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </form>
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</body>
+</html>
